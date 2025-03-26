@@ -19,7 +19,7 @@ echo "### commit the changes"
 git commit -m "deploy all files"
 
 echo "### push deploy-pages to remote"
-git push origin deploy-pages
+git push -ff origin deploy-pages
 
 echo "### switch to develop branch"
 git checkout develop
