@@ -10,4 +10,13 @@ echo "### create a buid"
 npm run build
 
 echo "### copy all dist files ti root"
-cp -r ./dist .
+cp -r ./dist/* .
+
+echo "### add all files on stage"
+git add .
+
+echo "### commit the changes"
+git commit -m "deploy all files"
+
+echo "### switch to develop branch"
+git checkout develop
