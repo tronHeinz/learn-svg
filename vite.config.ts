@@ -7,5 +7,5 @@ export default defineConfig({
     port: 7778
   },
   plugins: [react()],
-  base: "https://tronheinz.github.io/learn-svg/"
+  base: "./"
 })

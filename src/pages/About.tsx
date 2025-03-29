@@ -1,5 +1,10 @@
 const About = () => {
-  return <div>About page</div>;
+  return (
+    <div>
+      <img src="/dummy-1280x720-White.jpg" />
+      About page
+    </div>
+  );
 };
 
 export default About;
