@@ -1,10 +1,11 @@
 import { Outlet } from "react-router-dom";
-import Navigation from "@/components/Navigation";
+import { Link } from "react-router-dom";
+// import Navigation from "../Navigation";
 
 const RootLayout = () => {
   return (
     <>
-      <Navigation />
+      <Link to="/about">about</Link>
       <Outlet />
     </>
   );
