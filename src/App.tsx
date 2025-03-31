@@ -1,7 +1,7 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import RootLayout from "./components/RootLayout";
 import Home from "./pages/Home";
-import About from "./pages/About";
+import DrawLine from "./pages/DrawLine";
 import "./App.css";
 
 const router = createBrowserRouter(
@@ -15,8 +15,8 @@ const router = createBrowserRouter(
           element: <Home />,
         },
         {
-          path: "/about",
-          element: <About />,
+          path: "/drawSimpleLine",
+          element: <DrawLine />,
         },
       ],
     },
@@ -27,7 +27,11 @@ const router = createBrowserRouter(
 );
 
 function App() {
-  return <RouterProvider router={router}></RouterProvider>;
+  return (
+    <>
+      <RouterProvider router={router}></RouterProvider>
+    </>
+  );
 }
 
 export default App;

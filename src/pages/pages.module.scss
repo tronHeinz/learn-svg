@@ -1,0 +1,15 @@
+.container {
+  display: block;
+}
+
+h2 {
+  color: var(--primary-a40);
+}
+
+code {
+  background-color: var(--primary-a80);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  font-family: courier;
+}

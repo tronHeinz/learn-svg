@@ -1,13 +1,13 @@
 import { Outlet } from "react-router-dom";
-import { Link } from "react-router-dom";
-// import Navigation from "../Navigation";
+import Navigation from "../Navigation";
+import styles from "./rootLayout.module.scss";
 
 const RootLayout = () => {
   return (
-    <>
-      <Link to="/about">about</Link>
+    <main className={styles.container}>
+      <Navigation />
       <Outlet />
-    </>
+    </main>
   );
 };
 
