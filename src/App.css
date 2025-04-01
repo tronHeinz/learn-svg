@@ -1,11 +1,14 @@
 #root {
   margin: 0;
   padding: 0;
+  height: 100%;
 }
 
 html, body {
   padding: 0;
   margin: 0;
+  height: 100%;
+  color: var(--primary-a40);
 }
 
 :root {
