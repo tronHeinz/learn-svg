@@ -1,13 +1,17 @@
-import { Outlet } from "react-router-dom";
-import Navigation from "../Navigation";
-import styles from "./rootLayout.module.scss";
+import { Outlet } from 'react-router-dom';
+import Navigation from '../Navigation';
+import styles from './rootLayout.module.scss';
 
 const RootLayout = () => {
   return (
-    <main className={styles.container}>
-      <Navigation />
-      <Outlet />
-    </main>
+    <div className={styles.container}>
+      <header>here is the header</header>
+      <main className={styles.container}>
+        <Navigation />
+        <Outlet />
+      </main>
+      <footer>footer</footer>
+    </div>
   );
 };
 
