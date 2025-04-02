@@ -1,0 +1,6 @@
+.cm-editor {
+  font-size: 1.1rem;
+  border: 1px solid var(--primary-a80);
+  border-radius: 6px;
+  overflow: hidden
+}

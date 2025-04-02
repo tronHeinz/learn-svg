@@ -1,5 +1,6 @@
 import { EditorView, basicSetup } from 'codemirror';
 import { EditorState } from '@codemirror/state';
+import "./editor.css";
 
 type refType = HTMLDivElement | null;
 

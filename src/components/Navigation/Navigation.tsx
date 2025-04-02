@@ -1,15 +1,25 @@
 import { Link } from "react-router-dom";
 import styles from "./navigation.module.scss";
 
+const navigationData = [
+  {
+    to: "/",
+    text: "Make a line",
+  },
+  {
+    to: "/drawSimpleLine",
+    text: "Draw a simple line",
+  },
+];
+
 const Navigation = () => {
   return (
     <ul className={styles.navigation}>
-      <li className={styles.navigationLink}>
-        <Link to="/">Make a line</Link>
-      </li>
-      <li className={styles.navigationLink}>
-        <Link to="/drawSimpleLine">Draw a simple line</Link>
-      </li>
+      {navigationData.map((navItem) => (
+        <li className={styles.navigationLink}>
+          <Link to={navItem.to}>{navItem.text}</Link>
+        </li>
+      ))}
     </ul>
   );
 };

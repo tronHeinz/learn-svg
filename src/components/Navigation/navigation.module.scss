@@ -1,13 +1,12 @@
 .navigation {
-  padding: 0 2rem;
-  margin: 1rem;
+  padding: 0 1rem;
 }
 
 .navigationLink {
   display: block;
 }
 
-.navigationLink a, .navigationLink a:visited {
-  font-size: 1.25rem;
-  color: #868181
+.navigationLink a,
+.navigationLink a:visited {
+  color: #868181;
 }
