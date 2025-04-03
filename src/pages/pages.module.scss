@@ -1,5 +1,13 @@
 .container {
-  padding: 0 1rem;
-  display: block;
-  border-left: 1px solid var(--primary-a40);
+  background-color: var(--primary-a10);
+  padding: 0 2rem;
+}
+.inputEditor {
+  background: var(--primary-a0);
+  padding: 1rem;
+  border-radius: 5px;
+}
+.outputEditor {
+  background: var(--primary-a0);
+  border-radius: 5px;
 }

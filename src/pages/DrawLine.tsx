@@ -1,14 +1,7 @@
-import { useRef, useEffect } from "react";
-import Editor from "../components/Editor";
+import { useRef, useEffect } from 'react';
+import Editor from '../components/Editor';
 
-import styles from "./pages.module.scss";
-
-const pageData = [
-  {
-    title: "draw a simple line",
-    sourceCode: `asda`,
-  },
-];
+import styles from './pages.module.scss';
 
 const DrawLine = () => {
   const editorRef = useRef(null);
@@ -23,15 +16,15 @@ const DrawLine = () => {
   }, [defaultCode]);
 
   return (
-    <section>
-      <div className={styles.container}>
+    <div className={styles.container}>
+      <section>
         <h2>Draw a simple line</h2>
         {/* <img src="/learn-svg/assets/dummy-1280x720-White.jpg" /> */}
         <div className={styles.code}></div>
-        <div className={styles.editor} ref={editorRef}></div>
+        <div className={styles.inputEditor} ref={editorRef}></div>
         <h2>Result</h2>
         <hr />
-        <div ref={outputRef}></div>
+        <div className={styles.outputEditor} ref={outputRef}></div>
         <hr />
         <h2>Details</h2>
         <p>You have some commands in the d-attribute.</p>
@@ -48,8 +41,8 @@ const DrawLine = () => {
           </li>
           <li>z close the whole path</li>
         </ul>
-      </div>
-    </section>
+      </section>
+    </div>
   );
 };
 
