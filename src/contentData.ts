@@ -19,7 +19,9 @@ const lerningData = {
       },
       content: {
         title: 'Draw a simple line',
-        code: `<svg><path d="M0,0 h100" stroke="red"></path></svg>`,
+        code: `<svg height="300">
+  <path d="M50,50 h100 v200 h20 z" stroke="red" fill="aqua"></path>
+</svg>`,
         details: `        <p>You have some commands in the d-attribute.</p>
         <ul>
           <li>M define the x,y move start position</li>

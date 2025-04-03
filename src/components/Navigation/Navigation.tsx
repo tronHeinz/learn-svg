@@ -10,7 +10,7 @@ const Navigation = () => {
       <ul className={styles.navigation}>
         {sections.map(({ navigation }) => {
           return (
-            <li className={styles.navigationLink}>
+            <li key={navigation.to} className={styles.navigationLink}>
               <Link to={navigation.to}>{navigation.linkName}</Link>
             </li>
           );

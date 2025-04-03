@@ -5,7 +5,7 @@ import Editor from '../components/Editor';
 import HtmlRenderer from '../components/HtmlRenderer';
 import contentData from '../contentData';
 
-import styles from './pages.module.scss';
+import styles from './learningSession.module.scss';
 
 const LearingSession = () => {
   const editorRef = useRef(null);
@@ -25,16 +25,17 @@ const LearingSession = () => {
   }, [code]);
 
   return (
-    <div className={styles.container}>
+    <div className={styles.containerSections}>
       <section>
         <h2>{title}</h2>
         {/* <img src="/learn-svg/assets/dummy-1280x720-White.jpg" /> */}
-        <div className={styles.code}></div>
-        <div className={styles.inputEditor} ref={editorRef}></div>
+        <p className={styles.inputEditor} ref={editorRef}></p>
+      </section>
+      <section>
         <h2>Result</h2>
-        <hr />
-        <div className={styles.outputEditor} ref={outputRef}></div>
-        <hr />
+        <p className={styles.outputEditor} ref={outputRef}></p>
+      </section>
+      <section>
         <h2>Details</h2>
         <HtmlRenderer htmlContent={details}></HtmlRenderer>
       </section>

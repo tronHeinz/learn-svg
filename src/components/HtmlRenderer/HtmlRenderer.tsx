@@ -12,7 +12,6 @@ const HtmlRenderer = ({ htmlContent }: propTypes) => {
       htmlContent.toString();
   }, [htmlContent]);
 
-  console.log(htmlContent);
   return <div ref={htmlContainer} />;
 };
 
