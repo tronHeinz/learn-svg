@@ -1,7 +1,9 @@
 import { useRef, useEffect } from 'react';
-import Editor from '../components/Editor';
-import contentData from '../contentData';
 import { useLocation } from 'react-router-dom';
+
+import Editor from '../components/Editor';
+import HtmlRenderer from '../components/HtmlRenderer';
+import contentData from '../contentData';
 
 import styles from './pages.module.scss';
 
@@ -34,7 +36,7 @@ const LearingSession = () => {
         <div className={styles.outputEditor} ref={outputRef}></div>
         <hr />
         <h2>Details</h2>
-        {details.toString()}
+        <HtmlRenderer htmlContent={details}></HtmlRenderer>
       </section>
     </div>
   );
