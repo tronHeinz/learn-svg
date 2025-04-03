@@ -1,27 +1,20 @@
 import { Link } from 'react-router-dom';
 import styles from './navigation.module.scss';
-
-const navigationData = [
-  {
-    to: '/',
-    text: 'Make a line',
-  },
-  {
-    to: '/drawSimpleLine',
-    text: 'Draw a simple line',
-  },
-];
+import contentData from '../../contentData';
 
 const Navigation = () => {
+  const { sections } = contentData;
   //@todo add above a filter field
   return (
     <>
       <ul className={styles.navigation}>
-        {navigationData.map((navItem) => (
-          <li className={styles.navigationLink}>
-            <Link to={navItem.to}>{navItem.text}</Link>
-          </li>
-        ))}
+        {sections.map(({ navigation }) => {
+          return (
+            <li className={styles.navigationLink}>
+              <Link to={navigation.to}>{navigation.linkName}</Link>
+            </li>
+          );
+        })}
       </ul>
     </>
   );

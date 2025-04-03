@@ -1,29 +1,29 @@
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import RootLayout from "./components/RootLayout";
-import Home from "./pages/Home";
-import DrawLine from "./pages/DrawLine";
-import "./App.css";
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import RootLayout from './components/RootLayout';
+import Home from './pages/Home';
+import LearingSession from './pages/LearingSession';
+import './App.css';
 
 const router = createBrowserRouter(
   [
     {
-      path: "/",
+      path: '/',
       element: <RootLayout />,
       children: [
         {
-          path: "/",
+          path: '/',
           element: <Home />,
         },
         {
-          path: "/drawSimpleLine",
-          element: <DrawLine />,
+          path: '/lerning-section-1',
+          element: <LearingSession />,
         },
       ],
     },
   ],
   {
-    basename: "/learn-svg", // Replace 'your-repo-name' with the actual name of your GitHub repository
-  }
+    basename: '/learn-svg', // Replace 'your-repo-name' with the actual name of your GitHub repository
+  },
 );
 
 function App() {
