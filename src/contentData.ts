@@ -7,6 +7,7 @@ const lerningData = {
       },
       content: {
         title: 'Draw a simple line',
+        componentType: 'learingSession',
         code: ``,
         details: `
         <p>asdasd</p>`,
@@ -19,6 +20,7 @@ const lerningData = {
       },
       content: {
         title: 'Draw a simple line',
+        componentType: 'learingSession',
         code: `<svg height="300">
   <path d="M50,50 h100 v200 h20 z" stroke="red" fill="aqua"></path>
 </svg>`,

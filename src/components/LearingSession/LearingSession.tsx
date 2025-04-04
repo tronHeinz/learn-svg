@@ -1,9 +1,9 @@
 import { useRef, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 
-import Editor from '../components/Editor';
-import HtmlRenderer from '../components/HtmlRenderer';
-import contentData from '../contentData';
+import Editor from '../Editor';
+import HtmlRenderer from '../HtmlRenderer';
+import contentData from '../../contentData';
 
 import styles from './learningSession.module.scss';
 

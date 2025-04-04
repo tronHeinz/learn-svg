@@ -1,8 +1,38 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import RootLayout from './components/RootLayout';
 import Home from './pages/Home';
-import LearingSession from './pages/LearingSession';
+import { ComponentFactory } from './components';
+
+import contentData from './contentData';
 import './App.css';
+
+type sectionType = {
+  navigation: {
+    to: string;
+    linkName: string;
+  };
+  content: {
+    title: string;
+    code: string;
+    details: string;
+    componentType: string;
+  };
+};
+
+type sectionsType = {
+  sections: sectionType[];
+};
+
+const createChildrens = ({ sections }: sectionsType) => {
+  return sections.map((section: sectionType) => {
+    const { navigation, content } = section;
+
+    return {
+      path: navigation.to,
+      element: <ComponentFactory type={content.componentType} />,
+    };
+  });
+};
 
 const router = createBrowserRouter(
   [
@@ -14,10 +44,7 @@ const router = createBrowserRouter(
           path: '/',
           element: <Home />,
         },
-        {
-          path: '/lerning-section-1',
-          element: <LearingSession />,
-        },
+        ...createChildrens(contentData as sectionsType),
       ],
     },
   ],
