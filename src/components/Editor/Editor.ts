@@ -1,6 +1,6 @@
 import { EditorView, basicSetup } from 'codemirror';
 import { EditorState } from '@codemirror/state';
-import "./editor.css";
+import './editor.css';
 
 type refType = HTMLDivElement | null;
 
@@ -51,6 +51,10 @@ class Editor {
       const code = state.doc.toString();
       outputRef.innerHTML = code;
     }
+  }
+
+  destroy() {
+    this.view.destroy();
   }
 
   // @todo make it easier in order to type code into editor

@@ -21,7 +21,11 @@ const LearingSession = () => {
   const { title, code, details } = currentSessionData!.content;
 
   useEffect(() => {
-    new Editor(code, editorRef.current, outputRef.current);
+    const editor = new Editor(code, editorRef.current, outputRef.current);
+
+    return () => {
+      editor.destroy();
+    };
   }, [code]);
 
   return (
