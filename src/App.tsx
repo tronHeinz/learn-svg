@@ -3,7 +3,7 @@ import RootLayout from './components/RootLayout';
 import Home from './pages/Home';
 import { ComponentFactory } from './components';
 
-import contentData from './contentData';
+import contentData from './data';
 import './App.css';
 
 type sectionType = {

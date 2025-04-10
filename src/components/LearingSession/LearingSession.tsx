@@ -3,7 +3,7 @@ import { useLocation } from 'react-router-dom';
 
 import Editor from '../Editor';
 import HtmlRenderer from '../HtmlRenderer';
-import contentData from '../../contentData';
+import contentData from '../../data';
 
 import styles from './learningSession.module.scss';
 
