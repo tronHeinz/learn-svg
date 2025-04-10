@@ -1,10 +1,14 @@
 export default {
-  title: 'Draw a simple line 2',
+  title: 'Draw cirlces',
   componentType: 'learingSession',
-  code: `<svg height="300">
-<path d="M50,50 h200 v100 h200 z" stroke="red" fill="aqua"></path>
+  code: `
+<svg width="500">
+  <circle cx="100" cy="100" r="40" fill="blue" />
+  <circle cx="200" cy="100" r="30" fill="blue" />
+  <circle cx="300" cy="100" r="20" fill="red" />
 </svg>`,
-  details: `        <p>You have some commands in the d-attribute.</p>
+  details: `
+  <p>You have some commands in the d-attribute.</p>
   <ul>
     <li>M define the x,y move start position</li>
     <li>

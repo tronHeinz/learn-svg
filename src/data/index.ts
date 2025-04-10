@@ -1,5 +1,7 @@
 import section_1 from './section_1';
-import section_2 from './section_2';
+import section_circles from './section_circles';
+import section_retangles from './section_retangles';
+
 
 export default {
   sections: [
@@ -28,7 +30,14 @@ export default {
         to: '/lerning-section-2',
         linkName: 'Draw a simple line 2',
       },
-      content: section_2,
+      content: section_circles,
+    },
+    {
+      navigation: {
+        to: '/lerning-section-3',
+        linkName: 'Draw a simple line 2',
+      },
+      content: section_retangles,
     },
   ],
 };
