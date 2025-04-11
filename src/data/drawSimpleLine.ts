@@ -2,7 +2,7 @@ export default {
   title: 'Draw a simple line',
   componentType: 'learingSession',
   code: `
-<svg height="200">
+<svg width="400" height="200">
   <line x1="10" y1="10" x2="190" y2="190" stroke="black" stroke-width="2" />  
   <line x1="50" y1="10" x2="240" y2="190" stroke="red" stroke-width="1" />
 </svg>`,

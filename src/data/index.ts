@@ -2,6 +2,9 @@ import drawSimpleLine from './drawSimpleLine';
 import drawCircles from './drawCircles';
 import drawRectangles from './drawRectangles';
 import drawPath from './drawPath';
+import drawEllipse from './drawEllipse';
+import drawPolygon from './drawPolygon';
+import drawStar from './drawStar';
 
 const getNavigations = (linkName: string) => {
   const to = linkName.replace(/ /g, '-').toLowerCase();
@@ -41,6 +44,18 @@ export default {
     {
       navigation: getNavigations('Draw path'),
       content: drawPath,
+    },
+    {
+      navigation: getNavigations('Draw ellipse'),
+      content: drawEllipse,
+    },
+    {
+      navigation: getNavigations('Draw polygon'),
+      content: drawPolygon,
+    },
+    {
+      navigation: getNavigations('Draw a star'),
+      content: drawStar,
     },
   ],
 };
