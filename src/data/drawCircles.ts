@@ -2,10 +2,10 @@ export default {
   title: 'Draw cirlces',
   componentType: 'learingSession',
   code: `
-<svg width="500">
+<svg height="200">
   <circle cx="100" cy="100" r="40" fill="blue" />
   <circle cx="200" cy="100" r="30" fill="blue" />
-  <circle cx="300" cy="100" r="20" fill="red" />
+  <circle cx="200" cy="100" r="20" fill="red" />
 </svg>`,
   details: `
   <p>You have some commands in the d-attribute.</p>

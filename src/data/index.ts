@@ -1,7 +1,15 @@
-import section_1 from './section_1';
-import section_circles from './section_circles';
-import section_retangles from './section_retangles';
+import drawSimpleLine from './drawSimpleLine';
+import drawCircles from './drawCircles';
+import drawRectangles from './drawRectangles';
+import drawPath from './drawPath';
 
+const getNavigations = (linkName: string) => {
+  const to = linkName.replace(/ /g, '-').toLowerCase();
+  return {
+    to: `/${to}`,
+    linkName,
+  };
+};
 
 export default {
   sections: [
@@ -19,25 +27,20 @@ export default {
       },
     },
     {
-      navigation: {
-        to: '/lerning-section-1',
-        linkName: 'Draw a simple line',
-      },
-      content: section_1,
+      navigation: getNavigations('Draw simple line'),
+      content: drawSimpleLine,
     },
     {
-      navigation: {
-        to: '/lerning-section-2',
-        linkName: 'Draw a simple line 2',
-      },
-      content: section_circles,
+      navigation: getNavigations('Draw circles'),
+      content: drawCircles,
     },
     {
-      navigation: {
-        to: '/lerning-section-3',
-        linkName: 'Draw a simple line 2',
-      },
-      content: section_retangles,
+      navigation: getNavigations('Draw rectangles'),
+      content: drawRectangles,
+    },
+    {
+      navigation: getNavigations('Draw path'),
+      content: drawPath,
     },
   ],
 };

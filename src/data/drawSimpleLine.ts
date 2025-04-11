@@ -1,8 +1,10 @@
 export default {
   title: 'Draw a simple line',
   componentType: 'learingSession',
-  code: `<svg height="300">
-<path d="M50,50 h100 v200 h20 z" stroke="red" fill="aqua"></path>
+  code: `
+<svg height="200">
+  <line x1="10" y1="10" x2="190" y2="190" stroke="black" stroke-width="2" />  
+  <line x1="50" y1="10" x2="240" y2="190" stroke="red" stroke-width="1" />
 </svg>`,
   details: `        <p>You have some commands in the d-attribute.</p>
   <ul>
